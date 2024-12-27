@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pesquisa Interativa</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Pesquisa de Satisfação</h1>
+      <form id="form-pesquisa">
+        <label for="nome">Seu nome:</label>
+        <input type="text" id="nome" name="nome" required /><br /><br />
+
+        <label for="idade">Idade:</label>
+        <input type="number" id="idade" name="idade" required /><br /><br />
+
+        <label for="cidade">Cidade:</label>
+        <input type="text" id="cidade" name="cidade" required /><br /><br />
+
+        <label for="nota">Como você avalia nossa pesquisa?</label>
+        <select id="nota" name="nota" required>
+          <option value="1">1 - Muito ruim</option>
+          <option value="2">2 - Ruim</option>
+          <option value="3">3 - Regular</option>
+          <option value="4">4 - Bom</option>
+          <option value="5">5 - Excelente</option></select
+        ><br /><br />
+
+        <button type="submit">Enviar</button>
+      </form>
+
+      <h2>Resultados da Pesquisa</h2>
+      <table id="tabela-resultados">
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>Idade</th>
+            <th>Cidade</th>
+            <th>Avaliação</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Os resultados da pesquisa serão exibidos aqui -->
+        </tbody>
+      </table>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
